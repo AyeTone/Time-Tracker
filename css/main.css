@@ -34,21 +34,20 @@ img {
 }
 
 .container {
-    max-width: 1020px;
+    width: 96%;
     margin: 0 auto;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/*      User Card       */
+/*     Base Card       */
 
-.user-card{
-    width: 32rem;
+.card{
+    width: 100%;
     height: fit-content;
     background-color: var(--Darkblue);
-    margin: 0 auto;
+    margin: 10px auto;
     border-radius: var(--borderrounding);
 }
 
@@ -81,10 +80,18 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 0;
+    padding: 1.5rem 0;
 }
 
-.timeframes h3 {
+.time {
+    margin: 0 10px;
+}
+
+.timeframes button {
     font-weight: lighter;
     opacity: 0.6;
+    color:white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
 }
