@@ -11,4 +11,67 @@
     --Darkblue: hsl(235, 46%, 20%);
     --Desaturatedblue: hsl(235, 45%, 61%);
     --PaleBlue: hsl(236, 100%, 87%);
+
+    --borderrounding: 1.2rem;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--Verydarkblue);
+    color: white;
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*      User Card       */
+
+.user-card{
+    width: 32rem;
+    height: fit-content;
+    background-color: var(--Darkblue);
+    margin: 0 auto;
+    border-radius: var(--borderrounding);
+}
+
+/*      Info    */
+.user-info {
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    padding: 40px 30px;
+    border-radius: var(--borderrounding)
+}
+
+.user-img {
+    width: 7rem;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.user-text h1,
+.user-text p {
+    margin: 0;
+    padding: 3px 0;
+    font-weight: lighter;
+}
+
