@@ -19,7 +19,8 @@
 *::before,
 *::after {
     box-sizing: border-box;
-
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -29,29 +30,110 @@ body {
     font-size: 18px;
 }
 
+h1 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
 img {
     max-width: 100%;
 }
 
+.icon {
+    height: 43%;
+}
+
+.dots {
+    background-image: url(/images/icon-ellipsis.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 10px;
+}
+
 .container {
-    width: 96%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/*     Base Card       */
+/*     Base Cards Style       */
 
 .card{
     width: 100%;
     height: fit-content;
     background-color: var(--Darkblue);
-    margin: 10px auto;
+    margin: 20px auto;
+    border-radius: var(--borderrounding);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.card-back {
+    position: relative;
+    top: 0;
+}
+
+.card-bottom {
+    background-color: var(--Darkblue);
+    margin-top: 3.3rem;
+    height: fit-content;
+    padding-bottom: 0px;
+    z-index: 2;
     border-radius: var(--borderrounding);
 }
 
+.card-img {
+    position: absolute;
+    z-index: -1;
+    top: -10%;
+    right: 1.7rem;
+    height: 300px; 
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.current-time {
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.prev-time {
+    color: var(--PaleBlue);
+}
+
+/*          User Card        */
+
 /*          Info        */
+.user {
+    margin-top: 100px;
+}
 .user-info {
     background-color: var(--blue);
     display: flex;
@@ -75,7 +157,7 @@ img {
 }
 
 
-/*      TimeFrames        */
+/*      User - TimeFrames        */
 .timeframes {
     display: flex;
     justify-content: space-around;
@@ -89,9 +171,33 @@ img {
 
 .timeframes button {
     font-weight: lighter;
-    opacity: 0.6;
-    color:white;
+    color: var(--Desaturatedblue);
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
 }
+
+
+/*      Work Card        */
+.work {
+    background-color: var(--work);
+}
+
+
+/*      Play Card        */
+.play {
+    background-color: var(--play);
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
