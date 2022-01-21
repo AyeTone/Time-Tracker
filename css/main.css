@@ -156,6 +156,10 @@ img {
     font-weight: lighter;
 }
 
+.user-text p {
+    color: var(--PaleBlue);
+}
+
 
 /*      User - TimeFrames        */
 .timeframes {
