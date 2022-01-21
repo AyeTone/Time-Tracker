@@ -35,7 +35,7 @@ h1 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
 h2 {
@@ -189,6 +189,28 @@ img {
     background-color: var(--play);
 }
 
+
+/*      Study Card       */
+.study {
+    background-color: var(--study);
+}
+
+
+/*      Exercise Card        */
+.exercise {
+    background-color: var(--exercise);
+}
+
+
+/*      Social Card      */
+.social {
+    background-color: var(--social);
+}
+
+/*      Self-Care Card       */
+.self-care {
+    background-color: var(--self-care);
+}
 
 
 
