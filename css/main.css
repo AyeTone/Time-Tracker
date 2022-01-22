@@ -24,18 +24,22 @@
 }
 
 body {
+    position: relative;
     font-family: 'Rubik', sans-serif;
     background-color: var(--Verydarkblue);
     color: white;
     font-size: 18px;
+    height: 100vh;
 }
+
+
 
 h1 {
     font-size: 2.25rem;
 }
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 
 h2 {
@@ -63,6 +67,7 @@ img {
     width: 90%;
     margin: 0 auto;
     display: flex;
+    gap: 1.5rem;
     flex-direction: column;
     justify-content: center;
 }
@@ -70,27 +75,24 @@ img {
 /*     Base Cards Style       */
 
 .card{
-    width: 100%;
-    height: fit-content;
     background-color: var(--Darkblue);
-    margin: 20px auto;
     border-radius: var(--borderrounding);
     z-index: 1;
     overflow: hidden;
+
 }
 
 .card-back {
     position: relative;
     top: 0;
+    padding-top: 3.5rem;
 }
 
 .card-bottom {
     background-color: var(--Darkblue);
-    margin-top: 3.3rem;
-    height: fit-content;
-    padding-bottom: 0px;
     z-index: 2;
     border-radius: var(--borderrounding);
+    padding: 2.5rem;
 }
 
 .card-img {
@@ -105,18 +107,13 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 40px;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 }
 
 .stats {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 40px;
-    padding-top: 10px;
-    padding-bottom: 30px;
 }
 
 .current-time {
@@ -138,8 +135,8 @@ img {
     background-color: var(--blue);
     display: flex;
     align-items: center;
-    gap: 1.8rem;
-    padding: 40px 30px;
+    gap: 2rem;
+    padding: 2rem;
     border-radius: var(--borderrounding)
 }
 
@@ -151,7 +148,6 @@ img {
 
 .user-text h1,
 .user-text p {
-    margin: 0;
     padding: 3px 0;
     font-weight: lighter;
 }
@@ -217,7 +213,59 @@ img {
 }
 
 
+@media only screen and (min-width: 1200px) {
 
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    'userC workC studyC playC'
+    'userC exerciseC socialC selfcareC';
+}
+
+footer {
+    position: absolute;
+    bottom: 1rem;
+}
+
+/*      User Card       */
+.user {
+    height: 65%;
+    grid-area: userC;
+}
+.work {
+    grid-area: workC;
+}
+.play {
+    grid-area: playC;
+}
+.study {
+    grid-area: studyC;
+}
+.exercise {
+    grid-area: exerciseC;
+}
+.social {
+    grid-area: socialC;
+}
+.selfcare {
+    grid-area: selfcareC;
+}
+
+
+
+
+
+
+}
 
  
 
