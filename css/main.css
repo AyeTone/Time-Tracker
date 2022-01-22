@@ -70,7 +70,7 @@ img {
 
 .card{
     background-color: var(--Darkblue);
-    border-radius: var(--borderrounding);
+    border-radius: 1.7rem;
     z-index: 1;
     overflow: hidden;
 }
@@ -83,7 +83,7 @@ img {
 
 .card-bottom {
     background-color: var(--Darkblue);
-    z-index: 2;
+    background-size: inherit;
     border-radius: var(--borderrounding);
     padding: 2.5rem;
 }
@@ -226,17 +226,17 @@ h2 {
 }
 
 button {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .container {
     max-width: 90%;
     display: grid;
-    gap: 1.5rem;
+    gap: 1.8rem;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     grid-template-areas: 
-    'userC workC studyC playC'
+    'userC workC playC studyC'
     'userC exerciseC socialC selfcareC';
 }
 
@@ -276,11 +276,11 @@ footer {
 
 /*========= Base Card ============*/
 .card-back {
-    padding-top: 2.5rem;
+    padding-top: 3rem;
 }
 
 .card-img {
-    height: 230px;
+    height: 200px;
     top: -.8rem;
 }
 
@@ -300,8 +300,7 @@ footer {
     flex-direction: column;
     justify-content: flex-start; 
     align-items: flex-start;
-    height: 65%;
-    padding-bottom: 0;
+    height: 70%;
 }
 
 .user-img {
@@ -309,7 +308,9 @@ footer {
 }
 
 .user-text {
-    
+    padding-left:0;
+    padding-top: 2.4rem;
+    line-height: 2.8em;
 }
 
 .timeframes {
@@ -324,9 +325,11 @@ footer {
     padding: .5rem 0;
 }
 
+/*          Exercise         */
 
-
-
+.running-man {
+    height: 70px;
+}
 
 
 
