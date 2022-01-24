@@ -86,7 +86,7 @@ img {
     background-color: var(--Darkblue);
     background-size: inherit;
     border-radius: var(--borderrounding);
-    padding: 2.5rem;
+    padding: 2.3rem;
 }
 
 .card-img {
@@ -335,10 +335,6 @@ footer {
 .running-man {
     height: 70px;
 }
-
-
-
-
 }
 
  
