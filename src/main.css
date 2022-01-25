@@ -112,7 +112,7 @@ img {
 
 .current-time {
     font-size: 3rem;
-    font-weight: lighter;
+     font-weight: lighter;
 }
 
 .prev-time {
@@ -173,35 +173,59 @@ button {
 /*      Work Card        */
 .work {
     background-color: var(--work);
+    background-image: url('/images/icon-work.svg');
+    background-repeat: no-repeat;
+    background-size: 7rem;
+    background-position: top -10px right 20px;
 }
 
 
 /*      Play Card        */
 .play {
     background-color: var(--play);
+    background-image: url('/images/icon-play.svg');
+    background-repeat: no-repeat;
+    background-size: 7rem;
+    background-position: top -10px right 20px;
 }
 
 
 /*      Study Card       */
 .study {
     background-color: var(--study);
+    background-image: url('/images/icon-study.svg');
+    background-repeat: no-repeat;
+    background-size: 7rem;
+    background-position: top -10px right 20px;
 }
 
 
 /*      Exercise Card        */
 .exercise {
     background-color: var(--exercise);
+    background-image: url('/images/icon-exercise.svg');
+    background-repeat: no-repeat;
+    background-size: 7rem;
+    background-position: top -10px right 20px;
 }
 
 
 /*      Social Card      */
 .social {
     background-color: var(--social);
+    background-image: url('/images/icon-social.svg');
+    background-repeat: no-repeat;
+    background-size: 7rem;
+    background-position: top -10px right 20px;
 }
 
 /*      Self-Care Card       */
 .self-care {
     background-color: var(--self-care);
+    background-image: url('/images/icon-self-care.svg');
+    background-repeat: no-repeat;
+    background-size: 7rem;
+    background-position: top -10px right 20px;
 }
 
 
@@ -237,6 +261,7 @@ button {
 
 .container {
     display: grid;
+    max-width: 1040px;
     gap: 1rem;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -250,21 +275,24 @@ footer {
     bottom: 1rem;
 }
 
-/*========= Grid-Area Selectors ==========*/
+/*========= Grid-Area Selectors/ Each Card Styles ==========*/
 .user {
     grid-area: userC;
 }
 
 .work {
     grid-area: workC;
+    background-size: 5rem;
 }
 
 .play {
     grid-area: playC;
+    background-size: 5rem;
 }
 
 .study {
     grid-area: studyC;
+    background-size: 5rem;
 }
 
 .exercise {
@@ -273,10 +301,12 @@ footer {
 
 .social {
     grid-area: socialC;
+    background-size: 4.5rem;
 }
 
-.selfcare {
+.self-care {
     grid-area: selfcareC;
+    background-size: 5rem;
 }
 
 /*========= Base Card ============*/
