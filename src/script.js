@@ -16,32 +16,60 @@ getData()
 
 const loadCards = function (array) {
     array.forEach(card =>{
-      const section = document.createElement('section')
-      section.className = `card card-back ${card.title.split(' ').join('-').toLowerCase()}`
-      section.innerHTML = `
+      const div = document.createElement('div')
+      div.className = `card card-back ${card.title.split(' ').join('-').toLowerCase()}`
+      div.innerHTML = `
         <!-- ${card.title} -->
 
         <div class="card-bottom">
-        <header class="title">
+        <div class="title">
             <h2>
               ${card.title}
             </h2>
             <i class="dots">
             </i>
-        </header>
+        </div>
       
       <article class="stats">
           <p class="current-time">
             ${card.timeframes.daily.current}hrs
           </p>
           <p class="prev-time">
-            Previous - ${card.timeframes.daily.previous} hrs
+            Previus - ${card.timeframes.daily.previous} hrs
           </p>
       </article>
       </div>
     `
-    contentWrapper.append(section)
+    contentWrapper.append(div)
     })
 }
 
-dailyBtn.addEventListener('click' )
+weeklyBtn.addEventListener('click', function (array) {
+  array.forEach(card =>{
+    const div = document.createElement('div')
+    div.className = `card card-back ${card.title.split(' ').join('-').toLowerCase()}`
+    div.innerHTML = `
+      <!-- ${card.title} -->
+
+      <div class="card-bottom">
+      <div class="title">
+          <h2>
+            ${card.title}
+          </h2>
+          <i class="dots">
+          </i>
+      </div>
+    
+    <article class="stats">
+        <p class="current-time">
+          ${card.timeframes.weekly.current}hrs
+        </p>
+        <p class="prev-time">
+          Previous - ${card.timeframes.weekly.previous} hrs
+        </p>
+    </article>
+    </div>
+  `
+  contentWrapper.append(div)
+  })
+})

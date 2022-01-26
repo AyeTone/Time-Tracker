@@ -275,6 +275,8 @@ footer {
     bottom: 1rem;
 }
 
+
+
 /*========= Grid-Area Selectors/ Each Card Styles ==========*/
 .user {
     grid-area: userC;
@@ -324,8 +326,26 @@ footer {
     align-items: flex-start;
 }
 
+.card-bottom {
+    transition: color .2s ease-in-out;
+}
+
+.card-bottom:hover {
+    background-color: hsl(235, 46%, 35%);
+    cursor: pointer;
+}
+
 .current-time {
     padding-bottom: .3rem;
+}
+
+.dots {
+    transition: filter .2s ease-in-out;
+}
+
+.dots:hover {
+    filter: brightness(140%);
+    cursor: pointer;
 }
 
 /*      User Card       */
@@ -346,6 +366,15 @@ footer {
     padding-left:0;
     padding-top: 2.4rem;
     line-height: 2.8em;
+}
+
+.btn {
+    transition:color .2s ease-in-out ;
+}
+
+.btn:hover {
+    color:white;
+    cursor: pointer;
 }
 
 .timeframes {
