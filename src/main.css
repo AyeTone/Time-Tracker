@@ -43,6 +43,10 @@ img {
     max-width: 100%;
 }
 
+.active {
+    color: white;
+}
+
 .icon {
     height: 43%;
 }
@@ -97,7 +101,7 @@ img {
     height: 300px; 
 }
 
-.title {
+.card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
