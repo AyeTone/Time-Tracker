@@ -114,6 +114,16 @@ img {
     align-items: center;
 }
 
+.stats p {
+    animation: change 1s;
+}
+
+@keyframes change {
+    0% {
+        transform: scale(0.2);
+    }
+}
+
 .current-time {
     font-size: 3rem;
      font-weight: lighter;
